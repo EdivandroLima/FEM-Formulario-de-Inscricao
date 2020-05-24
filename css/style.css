@@ -1,0 +1,157 @@
+html, body {
+	min-height: 100vh
+}
+body {
+	background: hsl(0, 100%, 74%) url(../img/bg-intro-desktop.png) no-repeat top center;
+	background-size: cover;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	color: white;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden
+}
+@media (max-width: 500px) {
+	body {
+		background-image: url(../img/bg-intro-mobile.png)
+	}
+}
+* {
+	box-sizing: border-box
+}
+a {
+	text-decoration: none
+}
+
+/* Conteúdo e Container
+-------------------------*/
+.container {
+	max-width: 1100px;
+	margin: 0 auto
+}
+.row {
+	display: flex;
+	align-items: center;
+	min-height: 100vh
+}
+.row .col {
+	width: 50%;
+	padding: 30px
+}
+.row h1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin-bottom: 0;
+	line-height: 1.1em
+}
+.row p {
+	color: #f5f5f5;
+	line-height: 1.6em
+}
+@media (max-width: 800px){
+	.container {
+		text-align: center
+	}
+	.row {
+		flex-direction: column
+	}
+	.row .col {
+		width: 100%;
+		padding: 15px
+	}
+	.row h1 {
+		font-size: 1.7em
+	}
+}
+
+/* Coluna 2 - Formulário
+---------------------------*/
+.col-2 {
+	text-align: center
+}
+.gratis-7dias {
+	background: hsl(248, 32%, 49%);
+	font-size: .9em;
+	font-weight: 400;
+	padding: 15px;
+	box-shadow: 0 5px 5px rgba(0,0,0, .3);
+	border-radius: 8px
+}
+.gratis-7dias span {
+	font-weight: 600
+}
+.form {
+	background: white;
+	box-shadow: 0 5px 5px rgba(0,0,0, .3);
+	border-radius: 8px;
+	padding: 25px;
+	margin: 20px 0;
+	color: black
+}
+.form label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  right: -10000px
+}
+.form input {
+	width: 100%;
+	background: url(../img/icon-error.svg) no-repeat right -40px center;
+	margin: 0;
+	padding: 13px 18px;
+	border: 1px solid #d5d5d5;
+	border-radius: 6px;
+	font-size: 15px;
+	font-weight: 500
+}
+.form input:focus {
+	border-color: hsl(248, 32%, 49%);
+}
+.form #enviar {
+	background: hsl(154, 59%, 51%);
+	color: white;
+	border-color: hsl(154, 59%, 51%);
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 0.8px;
+	cursor: pointer
+}
+.form #enviar:hover {
+	opacity: .9;
+}
+.form-group {
+	padding: 13px 0;
+	position: relative
+}
+
+.form-erro {
+	font-size: 12px;
+	color: #dc3545;
+	float: right
+}
+.form-ter {
+	font-size: 11px;
+	color: #c5c5c5
+}
+.form-ter a {
+	color: #dc3545
+}
+
+/* Rodapé
+-------------*/
+footer {
+	text-align:center;
+	padding: 0 30px;
+	font-size: 11px;
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
+footer a {
+	color:  hsl(154, 59%, 51%)
+}
+@media (max-width: 800px) {
+	footer {
+		position: relative
+	}
+}

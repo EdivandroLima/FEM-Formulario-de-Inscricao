@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Estilo -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Componente de introdução com formulário de inscrição - Frontend Mentor</title>  
+</head>
+<body>
+    <section>
+        <div class="container conteudo"><!-- Conteúdo -->
+            <div class="row">
+                <div class="col col-1"><!-- Coluna 1 -->
+                    <h1>Aprenda a codificar assistindo outras pessoas</h1>
+                    <p>
+                        Veja como desenvolvedores experientes resolvem problemas em tempo real. Assistir a tutoriais com script é ótimo, mas entender como os desenvolvedores pensam é inestimável.
+                    </p>
+                </div><!--/ Coluna 1 -->
+                <div class="col col-2"><!-- Coluna 2 -->
+                    <div class="gratis-7dias">
+                        <span>Experimente grátis por 7 dias</span> e depois $20/mês.
+                    </div>
+                    <form class="form" name="form" method="post" action="#">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input onblur="validarForm(this.value,'nome')" type="text" name="nome" id="nome" placeholder="Nome">
+                            <div class="form-erro" id="erro-nome"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input onblur="validarForm(this.value,'sobrenome')" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                            <div class="form-erro" id="erro-sobrenome"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input  onblur="validarForm(this.value,'email')" type="text" name="email" id="email" placeholder="Email">
+                            <div class="form-erro" id="erro-email"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input onblur="validarForm(this.value,'senha')" type="password" name="senha" id="senha" placeholder="Senha">
+                            <div class="form-erro" id="erro-senha"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="enviar" name="enviar" value="Reivindique seu teste gratuito" onclick="enviarSubmit()">
+                        </div>
+                        <div class="form-ter">
+                            Ao clicar no botão, você concorda com nossos <a href="#">Termos e Serviços</a>
+                        </div>
+                    </form>
+                </div><!--/ Coluna 2 -->
+            </div>
+        </div><!-- Conteúdo -->
+    </section>
+    <footer>
+        <div class="container">
+            <p>
+                Desafio do <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Codificado pelo <a href="https://github.com/EdivandroLima">Edivandro Lima</a>.
+            </p>
+        </div>
+    </footer>
+    <!-- Validar Formulário -->
+    <script src="./js/validar-form.js"></script>
+</body>
+</html>
